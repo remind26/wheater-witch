@@ -111,11 +111,4 @@ function getActivitiesBasedOnWeather(condition) {
   }
 }
 
-function displayActivities(activities, container) {
-  const activitiesHtml = activities
-    .map(activity => `<li><a href="#/${activity.toLowerCase().replace(/\s+/g, '-')}">${activity}</a></li>`)
-    .join('');
-  container.innerHTML = `<ul>${activitiesHtml}</ul>`;
-}
-
 export default WeatherWitch;
